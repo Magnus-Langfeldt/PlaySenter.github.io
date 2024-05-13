@@ -1,0 +1,144 @@
+/*Container for the footer*/
+footer {
+    background-color: rgb(75, 75, 75);
+    color: white;
+    border-top: 5px solid black;
+    padding: 50px;
+    gap: 20px;
+    margin: 0;
+    margin-top: 150px;
+}
+
+footer p {
+  color: white
+}
+  
+/*Container for the items in the footer*/
+section-footer {
+  display: grid;
+  grid-template-areas: 
+  "contact-us sources"
+  "quick-links sources"
+}
+  
+/*Container for individual items in the footer*/
+article-footer {
+  padding: 30px;
+  width: 360px;
+  margin: auto auto auto 20px;
+}
+
+.quick-links, .contact-us {
+  width: fit-content
+}
+  
+/*Generel styling*/
+.title-footer {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: left;
+}
+  
+/*Contact us section*/
+.contact-us {
+  grid-area: contact-us;
+}
+.contact-us > p {
+  text-align: left;
+}
+  
+/*About us section*/
+.sources {
+  grid-area: sources;
+  border: 3px solid rgb(0, 0, 0);
+  padding: 30px;
+  border-radius: 15px;
+  background-color: darkslategray;
+  width: 80%;
+  margin: auto auto;
+}
+.sources * {
+  color: white;
+}
+.sources li {
+  text-align: left;
+}  
+
+/*Quick links section*/
+.quick-links {
+  grid-area: quick-links;
+}
+  
+.links {
+  color:white;
+}
+  
+.footer-list-item {
+  margin-bottom: 5px;
+  text-decoration: underline;
+  text-align: left;
+}
+  
+/*Copyrigth text*/
+.footer-copyright {
+  margin: auto auto;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.sourceKind {
+  text-align: left;
+  font-size: 20px; 
+  margin: 10px; 
+  margin-left: 0;
+}
+
+/*Screen between 0px and 440px*/
+@media (max-width: 529px) {
+  section-footer {
+    display: grid;
+    grid-template-areas: 
+    "contact-us"
+    "sources"
+    "quick-links";
+    margin: 0 0;
+    text-align: left;
+  }
+  footer {
+    padding: 15px;
+  }
+  .sources {
+    width: fit-content;
+    margin: auto 20px;
+  }
+  .sources > ul {
+    padding-left: 0
+  }
+  
+  article-footer {
+    padding: 30px;
+    width: 100%;
+    margin: auto 15px;
+  }
+}
+  
+/*Screen between 440px and 930px*/
+@media (min-width: 529px) and (max-width: 930px) {
+  footer {
+    padding: 35px;
+  }
+
+  article-footer, .sources {
+    margin: auto auto auto 10px;
+  }
+  
+  section-footer {
+    display: grid;
+    grid-template-areas:    
+    "contact-us"
+    "sources"
+    "quick-links";
+    margin: auto auto;
+  }
+}

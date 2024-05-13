@@ -1,0 +1,133 @@
+header * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+/*Header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(114, 114, 114);
+    border: 3px solid black;
+}
+  
+header a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 20px;
+    text-shadow: 2px 2px 1px black;
+}
+  
+header a:hover, header a:active {
+    background-image: linear-gradient(#00000099, rgba(251, 22, 22, 0.6));
+}
+#navMario {
+    background-image: linear-gradient(rgba(0, 20, 98, 0.1), rgba(4, 9, 30, 0.849)), url("../Media/Index/Mario.png");
+    background-position: center;
+    background-size: cover;
+    border-left: 3px solid black;
+}
+#navMario:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(251, 22, 22, 0.6)), url("../Media/Index/Mario.png");
+}
+
+#navPong {
+    background-image: linear-gradient(rgba(0, 20, 98, 0.1), rgba(4, 9, 30, 0.849)), url("../Media/Index/PingPong.jpeg");
+    background-position: center;
+    background-size: cover;
+    border-left: 3px solid black;
+}
+#navPong:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(251, 22, 22, 0.6)), url("../Media/Index/PingPong.jpeg");
+}
+
+#navSolve {
+    background-image: linear-gradient(rgba(0, 20, 98, 0.1), rgba(4, 9, 30, 0.849)), url("../Media/Index/Question.jpeg");
+    background-position: center;
+    background-size: cover;
+    border-left: 3px solid black;
+}
+#navSolve:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(251, 22, 22, 0.6)), url("../Media/Index/Question.jpeg");
+}
+  
+/*Home button*/
+header nav1 {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: none;
+}
+  
+header nav1 a {
+    font-weight: bold;
+    font-size: 30px;
+    height: 75.5px;
+}
+  
+header nav2 {
+    display: flex;
+}
+  
+header nav2 a{
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  /*Hamburger-menue*/
+.fa-bars{
+    color: white;
+    font-size: 40px;
+    padding: 5px 20px;
+    display: none;
+    margin: auto 0;
+    height: 75.5px;
+}
+.fa-bars:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(251, 22, 22, 0.6))
+}
+  
+/*Screen smaller than 600px*/
+@media(max-width: 745px){
+    /*Header*/
+    header{
+        flex-direction: column;
+    }
+  
+    header nav2 {
+        display: none;
+    }
+  
+    header nav2.show {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+  
+    /*Hamburger-menue*/
+    .fa-bars {
+        display: flex;
+        align-items: center;
+    }
+  
+    .fa-bars:active {
+        background-color: rgb(200, 0, 0);
+    }
+    header nav2 a{
+        font-size: 30px;
+        border-bottom: 3px solid black;
+    }
+    #navSolve {
+        border-bottom: none;
+    }
+    header > nav2 > #navMario, header > nav2 > #navPong, header > nav2 > #navSolve {
+        border-left: none;
+    }
+    header > nav2 > #navMario {
+        border-top: 3px solid black;
+    }
+}

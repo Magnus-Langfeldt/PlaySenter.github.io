@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PingPong</title>
+
+    <link rel="Stylesheet" href="./PingPong.css">
+    <link rel="Stylesheet" href="../../Common CSS/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="Stylesheet" href="../../Common CSS/navbar.css">
+</head>
+<body>
+    <header>
+        <nav1>
+          <a href="../../Index/Index.html">Home</a>
+          <i class="fa-solid fa-bars"></i>
+        </nav1>
+        <nav2>
+          <a href="../Catch Mario/Catch-Mario.html" id="navMario">Catch Mario</a>
+          <a href="./PP.html" id="navPong">PingPong</a>
+          <a href="../Solve the Questions/Solve-the-Questions.html" id="navSolve">Solve the Questions</a>
+        </nav2>
+    </header>
+
+    <div>
+        <h1>Classic PingPong</h1>
+        <h3>
+            <div class="controls"><div>W or K =</div><i class="fa-solid fa-arrow-up"></i></div>
+            <div class="controls"><div>S or M =</div><i class="fa-solid fa-arrow-down"></i></div>
+        </h3>
+        <main>
+            <div class="btns">
+                <button class="up" id="upLeft"><i class="fa-solid fa-arrow-up" id="upLeft"></i></button>
+                <button class="down" id="downLeft"><i class="fa-solid fa-arrow-down" id="downLeft"></i></button>
+            </div>
+            <div id="leftPlayer">
+                <div class="controls" style="margin-bottom: 50px;"><h3>W =</h3><i class="fa-solid fa-arrow-up"></i></div>
+                <div class="controls"><h3>S =</h3><i class="fa-solid fa-arrow-down"></i></div>
+            </div>
+            <canvas></canvas> 
+            <div id="rightPlayer">
+                <div class="controls" style="margin-bottom: 50px;"><i class="fa-solid fa-arrow-up"></i> <h3>= K</h3></div>
+                <div class="controls"><i class="fa-solid fa-arrow-down"></i> <h3>= M</h3> </div>
+            </div>
+            <div class="btns">
+                <button class="up" id="upRight"><i class="fa-solid fa-arrow-up" id="upRight"></i></button>
+                <button class="down" id="downRight"><i class="fa-solid fa-arrow-down" id="downRight"></i></button>
+            </div>
+        </main>
+    </div>
+    <h3 id="winText"></h3>
+    <footer>
+        <section-footer>
+          <article-footer class="contact-us">
+              <p class="title-footer">Contact Us</p>
+              <p>Email: magnus.langfeldt@gmail.com</p>
+              <p>Phone: +47 954 90 926</p>
+          </article-footer>
+    
+          <article-footer class="sources">
+              <p class="title-footer">Sources:</p>
+              <p class="sourceKind"><b>Inspiration:</b></p>
+              <ul>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=LTtfoyHxAVU">https://www.youtube.com/watch?v=LTtfoyHxAVU</a>
+                </li>
+              </ul>
+          </article-footer>
+    
+          <article-footer class="quick-links">
+              <p class="title-footer">Quick Links</p>
+              <ul class="footer-list">
+                    <li class="footer-list-item">
+                        <a href="../../Index/Index.html" class="links">Home</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="../Catch Mario/Catch-Mario.html" class="links">Catch Mario</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="./PP.html" class="links">PingPong</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="../Solve the Questions/Solve-the-Questions.html" class="links">Solve the Question</a>
+                    </li>
+              </ul>
+          </article-footer>
+        </section-footer>
+        <p class="footer-copyright">&copy; 2024 PlaySenter. All rights reserved.</p>
+    </footer>
+
+    <script src="./PP.js"></script>
+    <script src="../../Common Javascript/navbar.js"></script>
+</body>
+</html>
